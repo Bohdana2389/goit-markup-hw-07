@@ -1,0 +1,21 @@
+.logo {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    font-family: var(--logo-font);
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+  }
+  
+  .page-header__logo {
+    margin-right: 93px;
+  }
+  
+  .page-header__logo--blu {
+    color: var(--accent-color);
+  }
+  
+  .page-header__logo--black {
+    color: var(--alt-text-color);
+  }

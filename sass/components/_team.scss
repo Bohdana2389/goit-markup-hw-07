@@ -1,0 +1,26 @@
+.team-page {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    background: var(--second);
+  }
+  
+  .team {
+    padding-bottom: 10px;
+    font-family: var(--main-font);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    color: var(--alt-text-color);
+  }
+  
+  .team__position {
+    padding-bottom: 16px;
+    font-family: var(--main-font);
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--main-text-color);
+  }
+  

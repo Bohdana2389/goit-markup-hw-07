@@ -1,0 +1,105 @@
+
+  .work {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  
+  .workers {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+  }
+  
+  .workers__indent{
+    margin-right: -30px;
+    margin-bottom: -30px;
+  }
+
+  .workers__item {
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+  
+  .workers__card {
+    display: block;
+    position: relative;
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .workers__card:hover, .workers__card:focus {
+    display: block;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+  
+  
+  .workers__card:hover .overlay__site, .workers__card:focus .overlay__site {
+    opacity: 1;
+  }
+  
+  .overlay {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .overlay__site {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(33, 150, 243, 0.9);
+    transform: translateY(100%);
+    transition-property: transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .workers__card:hover .overlay__site {
+    transform: translateY(0%);
+  }
+  
+  .overlay__text {
+    display: block;
+    width: 322px;
+    height: 168px;
+    margin-bottom: 0;
+    font-size: 18px;
+    line-height: 1.56;
+    color: var(--title-color);
+  }
+ 
+  .description {
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    background: #ffffff;
+    border-bottom: 1px solid #eeeeee;
+    border-left: 1px solid #eeeeee;
+    border-right: 1px solid #eeeeee;
+  }
+  
+  .description__page {
+    font-family: var(--main-font);
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--alt-text-color);
+  }
+  
+  .description__site {
+    font-family: var(--main-font);
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
+    color: var(--main-text-color);
+  }
+  

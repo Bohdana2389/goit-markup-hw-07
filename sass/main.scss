@@ -1,0 +1,115 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  *, *::before, *::after {
+    box-sizing: inherit;
+  }
+  
+  @import "./utils/variables";
+  @import "./components/logo";
+  @import "./components/link";
+  @import "./components/page-header";
+  @import "./components/modal";
+  @import "./components/clients";
+  @import "./components/comand";
+  @import "./components/advantages";
+  @import "./components/footer";
+  @import "./components/hero-fone";
+  @import "./components/images";
+  @import "./components/row_button";
+  @import "./components/social";
+  @import "./components/team";
+  @import "./components/work";
+
+  
+  
+  body {
+    margin: 0;
+    padding-top: 80px;
+    font-family: var(--main-font);
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--main-text-color);
+  }
+  
+  
+  li {
+    list-style-type: none;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  .visually {
+    font-family: var(--main-font);
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--alt-text-color);
+  }
+  
+  .visually__indent{
+    margin-top: 0;
+    margin-bottom: 50px;
+  }
+
+ 
+  .container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .color {
+    background-color: var(--title-colors);
+  }
+ 
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+  
+ 
+  h1 {
+    margin-top: 0;
+  }
+  
+  p {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  
+  h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+    }
