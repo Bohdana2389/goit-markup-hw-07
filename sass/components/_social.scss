@@ -17,16 +17,14 @@
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+
+    &:hover, &:focus {
+      background-color: var(--accent-color);
+    }
   }
   
-  .social-icons__link:hover, .social-icons__link:focus {
-    background-color: var(--accent-color);
-  }
-  
-  .social-icons__link:hover .social-icons__svg, .social-icons-link:focus .social-icons-svg {
-    fill: var(--title-color);
-  }
-  
+ 
   .social-icons__svg {
     width: 20px;
     height: 20px;
@@ -34,4 +32,11 @@
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+
+     
+  .social-icons__link:hover &, .social-icons-link:focus & {
+    fill: var(--title-color);
+  }
+  
   }

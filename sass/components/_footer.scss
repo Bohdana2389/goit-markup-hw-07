@@ -44,20 +44,21 @@
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus{
+      background-color: var(--accent-color); 
+    }
   }
-  
-  .social-icons-footer__link:hover, .social-icons-footer__link:focus {
-    background-color: var(--accent-color);
-  }
-  
-  .social-icons-footer__link:hover .social-icons-footer__svg, .social-icons-footer__link:focus .social-icons-footer__svg {
-    fill: var(--title-color);
-  }
-  
+ 
+
   .social-icons-footer__svg {
     width: 20px;
     height: 20px;
     fill: var(--title-color);
+
+    .social-icons-footer__link:hover &, .social-icons-footer__link:focus &{
+      fill: var(--title-color); 
+    }
   }
   .dark-fone__form {
     margin-left: 93px;
@@ -99,21 +100,23 @@
     box-sizing: border-box;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
+
+    &::placeholder {
+      padding-left: 16px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      width: 47px;
+      height: 20px;
+      font-family: var(--main-font);
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 1.25;
+      letter-spacing: 0.03em;
+      color: rgba(255, 255, 255, 0.6);
+    }
+
   }
   
-  .dark-fone__input::placeholder {
-    padding-left: 16px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    width: 47px;
-    height: 20px;
-    font-family: var(--main-font);
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
-  }
   .dark-fone__logo {
     display: block;
     padding-bottom: 0;

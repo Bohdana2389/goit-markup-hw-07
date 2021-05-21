@@ -1,4 +1,6 @@
-.hero-fone__btn {
+
+  
+  .hero-fone__btn {
     border: 1px solid var(--accent-color);
     border-radius: 4px;
     padding: 10px 32px;
@@ -23,12 +25,11 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+     &:hover, &:focus {
+       color: var(--title-color);
+     background-color: var(--accent-color);
   }
-  
- 
-  .hero-fone__btn:hover, .hero-fone__btn:focus {
-    color: var(--title-color);
-    background-color: var(--accent-color);
   }
   
   

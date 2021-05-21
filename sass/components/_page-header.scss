@@ -36,6 +36,11 @@
   
   .menu__item {
     position: relative;
+
+
+    &:hover::after, &:focus::after {
+      opacity: 1;
+    }
   }
   
   .head .menu__item--current::after {
@@ -50,9 +55,7 @@
     left: 0;
   }
   
-  .menu__item:hover::after, .menu__item:focus::after {
-    opacity: 1;
-  }
+ 
   
   .menu__item:not(:last-child) {
     margin-right: 50px;
@@ -113,3 +116,15 @@
     text-decoration: none;
   }
   
+  .heading {
+    margin: 40px 40px 12px 40px;
+    width: 448px;
+    height: 23px;
+    font-family: var(--main-font);
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--alt-text-color);
+  }

@@ -24,19 +24,22 @@
     transition-property: border-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  
-  .clients-icons__link:hover, .clients-icons__link:focus {
-    border-color: var(--accent-color);
-  }
-  
-  .clients-icons__link:hover .clients-icons__svg, .clients-icons-link:focus .clients-icons-svg {
-    fill: var(--accent-color);
-  }
+    
+    &:hover,
+    &:focus{
+      border-color: var(--accent-color); 
+
+    }
+   }
   
   .clients-icons__svg {
     fill: #AFB1B8;
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  .clients-icons__link:hover &, :focus & {
+    fill: var(--accent-color);
+    
+    }
   }
